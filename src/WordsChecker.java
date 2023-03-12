@@ -6,7 +6,7 @@ public class WordsChecker {
     private Set<String> set;
 
     public WordsChecker(String text) {
-        set = new HashSet<>();
+        this.set = new HashSet<>();
         set.addAll(List.of(text.split("\\P{IsAlphabetic}+")));
     }
 
